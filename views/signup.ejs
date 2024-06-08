@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/static/signup.css">
+</head>
+<body>
+    <div class="container">
+        <form id="signup" action="/signup" method="post">
+            <center>
+                <h1>Sign Up</h1>
+            </center>
+            <input type="text" id="name" name="name" placeholder="Username"><br><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            <input type="password" id="password" name="password" placeholder="Password"><br><br>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"><p class="error_msg" id="error_msg" style="display: none;">Passwords are not Equal</p><p class="error_msg2" id="error_msg2" style="display: none;">Passwords are Equal</p>
+            <center><br>
+            <input type="submit"><br><br>
+            <a href="/login">Already Have an Account ?</a>
+        </center>
+        </form>
+    </div>
+</body>
+<script src="/static/signup.js"></script>
+</html>

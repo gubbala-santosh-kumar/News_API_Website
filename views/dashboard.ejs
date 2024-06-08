@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">News API</h1>
+            <ul class="lists">
+                <li class="list_items"><a href="/dashboard">Home</a></li>
+                <li class="list_items"><a href="/dashboard">Blog</a></li>
+                <li class="list_items"><a href="/login">Log Out</a></li>
+            </ul>
+        </div>
+    </header><br>
+    <section class="SEARCH">
+        <center>
+            <h2>"Stay informed with the latest updates."</h2>
+            <form action="/dashboard" method="get">
+                <input type="search" name="search" placeholder="Search for news....." required>
+                <button type="submit">Search</button>
+            </form>
+        </center>
+    </section>
+    <section>
+        <ul>
+            <% if (articles) { %>
+                <% articles.forEach(article => { %>
+                    <li><br>
+                        <h2><%= article.title %></h2>
+                        <p><%= article.description %></p>
+                        <center>
+                            <img class="" src="<%= article.urlToImage %>" alt="LOAGING....." name="LOADING"><br>
+                            <p>This News is Published At <%= article.publishedAt %></p>
+                            <p><%= article.content %></p><br>
+                            <a href="<%= article.url %>" style="color: blue;">Read more</a>
+                        </center>
+                    </li>
+                <% }) %>
+            <% } %>
+        </ul>
+    </section>
+</body>
+</html>

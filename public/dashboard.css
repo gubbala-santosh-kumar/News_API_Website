@@ -1,0 +1,71 @@
+*{
+    list-style: none;
+}
+header{
+    background: linear-gradient(to right, grey,black,grey);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    height: 60px;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 3px;
+}
+.lists{
+    display: flex;
+    margin-left: 65%;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+.list_items{
+    justify-content: end;
+    margin-left: 50px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+a{
+    padding: 10px;
+    border: 0.1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    box-shadow: 5px 2px 10px black;
+    background-color: white;
+    color: black;
+}
+section{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px black;
+}
+.SEARCH{
+    padding-top: 20px;
+    height: 150px;
+}
+input[type="search"],button[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px black;
+}
+button[type="submit"]{
+    background-color: black;
+    color: white;
+}
+button[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    box-shadow: none;
+}
+img{
+    height: 500px;
+    width: 800px;
+    border: 1px ridge grey;
+    box-shadow: 5px 5px 15px black;
+}
+img:hover{
+    box-shadow: none;
+}
